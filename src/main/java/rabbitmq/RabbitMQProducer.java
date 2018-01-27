@@ -6,9 +6,14 @@ import java.io.Serializable;
 
 abstract public class RabbitMQProducer extends RabbitMQChannel
 {
-    public void sendMessage(Serializable object) throws Exception
+    public void sendMessage(Serializable object)
     {
-        System.out.println("===Sending message====");
-        getChannel().basicPublish("", getQueueName(), null, SerializationUtils.serialize(object));
+        try{
+            System.out.println("===Sending message==== on " + getQueueName());
+            getChannel().basicPublish("", getQueueName(), null, SerializationUtils.serialize(object));
+            System.out.println("===Message Sent====");
+        }catch (Exception e) {
+            System.out.print(e.getMessage());
+        }
     }
 }
