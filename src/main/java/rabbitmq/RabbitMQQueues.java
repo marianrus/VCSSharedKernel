@@ -10,7 +10,9 @@ final public class RabbitMQQueues
     final public static String REPOSITORY_CONTRIBUTORS_QUEUE = "repository.contributors";
     
     final public static String REPOSITORY_BRANCHES_QUEUE = "repository.branches";
-    
+
+    final public static String REPOSITORY_PULLS_QUEUE = "repository.pull.requests";
+
     final public static String REPOSITORY_TAGS_QUEUE = "repository.tags";
     
     final public static String REPOSITORY_LANGUAGES_QUEUE = "repository.languages";
