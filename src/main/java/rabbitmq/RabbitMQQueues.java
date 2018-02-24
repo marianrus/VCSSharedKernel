@@ -7,7 +7,7 @@ final public class RabbitMQQueues
     
     final public static String REPOSITORY_COLLECTED_QUEUE = "repository.data.collected";
 
-    final public static String REPOSITORY_NEW_QUEUE = "";
+    final public static String REPOSITORY_NEW_QUEUE = "repository.new";
 
     final public static String REPOSITORY_CONTRIBUTORS_QUEUE = "repository.contributors";
     
